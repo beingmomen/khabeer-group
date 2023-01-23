@@ -1,0 +1,36 @@
+.svg-inline--fa {
+  width: 24px;
+}
+
+li {
+  &:not(.logo) {
+    .router-link-active {
+      &.router-link-exact-active {
+        --tw-bg-opacity: 1;
+        background-color: hsl(var(--p) / var(--tw-bg-opacity));
+        --tw-text-opacity: 1;
+        color: hsl(var(--pc) / var(--tw-text-opacity));
+      }
+    }
+  }
+}
+
+.pagination-wind {
+  margin-inline-start: auto;
+  min-width: initial !important;
+  max-width: fit-content;
+  section {
+    color: hsla(var(--bc) / var(--tw-text-opacity, 1));
+    background-color: hsl(var(--b1) / var(--tw-bg-opacity));
+    --tw-bg-opacity: 1;
+    --tw-border-opacity: 1;
+    border-color: hsl(var(--b2, var(--b1)) / var(--tw-border-opacity));
+    > div.flex {
+      display: none;
+    }
+
+    .bg-gradient-to-r {
+      color: initial !important;
+    }
+  }
+}
